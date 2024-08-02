@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial;
+    background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+    
+}
+
+label {
+
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: balck;
+}
+
+input[type="email"],
+input[type="password"] {
+
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+</style>
+</head>
+<body>
+	<form action="login" method="post">
+
+		<label>Email Id</label> <input type="email" name="email"> <br>
+		<br> <label>Password</label> <input type="password"
+			name="password"> <br>
+		<br> <input type="submit" value="Login">
+
+	</form>
+</body>
+</html>

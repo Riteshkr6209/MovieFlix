@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+form, a {
+    margin: 10px 0;
+    display: inline-block;
+    width: 60%;
+}
+
+input[type="submit"] {
+    background-color: #1abc9c;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover {
+    background-color: #16a085;
+    transform: translateY(-2px);
+}
+
+input[type="submit"]:active {
+    background-color: #12876f;
+    transform: translateY(2px);
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a input[type="submit"] {
+    background-color: #e74c3c;
+}
+
+a input[type="submit"]:hover {
+    background-color: #c0392b;
+}
+
+a input[type="submit"]:active {
+    background-color: #96281b;
+}
+
+</style>
+
+</head>
+<body>
+	<h2>Welcome admin</h2>
+
+	<form action="viewuser">
+		<input type="submit" value="View Users">
+	</form>
+	<br>
+	<br>
+
+	<form action="map-updateUser">
+		<input type="submit" value="Update Users">
+	</form>
+	<br>
+	<br>
+
+	<form action="map-deleteUser">
+		<input type="submit" value="Delete Users">
+	</form>
+	<br>
+	<br>
+
+	<form action="map-addmovie">
+		<input type="submit" value="Add Movies">
+	</form>
+	<br>
+	<br>
+
+	<a href="viewmovie"> <input type="submit" value="view Movies" />
+	</a>
+	<br>
+	<br>
+
+	<form action="logout">
+		<input type="submit" value="Log Out">
+	</form>
+	<br>
+	<br>
+
+
+</body>
+</html>

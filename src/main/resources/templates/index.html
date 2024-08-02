@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial;
+    background-color: #f0f0f0;
+    
+}
+
+.hero_title {
+    margin-bottom: 20px;
+    color: red;
+    font-size: 24px;
+}
+
+form {
+    margin: 10px 0;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+</style>
+
+
+</head>
+<body>
+	<h1 class="hero_title"  >Welcome to My movieFlix</h1>
+
+	<form action="map-register">
+		<input class="sign-up" type="submit" value="Sign Up">
+	</form>
+	<br>
+	<br>
+	<form action="map-login">
+		<input class="login" type="submit" value="Login">
+	</form>
+
+
+</body>
+</html>
